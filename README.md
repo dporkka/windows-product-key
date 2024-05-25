@@ -118,3 +118,59 @@ Here's how to do it:
 Copy this code below and replace `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` with your product key.
 
 `DISM /Online /Set-Edition:ProfessionalWorkstation /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /AcceptEula`
+
+
+## Troubleshooting Tips
+
+If the above steps didn't work, here is an alternative approach using the `slmgr.vbs` script to change your Windows edition:
+
+### Using slmgr.vbs Script
+
+1.  Open Command Prompt as Administrator:
+
+    -   Click on the Start menu.
+    -   Type `cmd` or `Command Prompt`.
+    -   Right-click on Command Prompt and select `Run as administrator`.
+2.  Use the slmgr.vbs Command to Enter the New Product Key:
+
+    -   Enter the following command, replacing `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` with your actual product key for the Professional Workstation edition:
+
+        Copy this code below after adding your Product Key.
+
+        `slmgr.vbs /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX`
+
+3.  Activate the Product Key:
+
+    -   After entering the product key, run the following command to activate it:
+
+        `slmgr.vbs /ato`
+
+### Alternative: Changing Product Key via Settings
+
+If the command-line approach doesn't work, you can also change the product key through the Windows Settings:
+
+1.  Open Settings:
+
+    -   Press `Windows + I` to open the Settings app.
+2.  Navigate to Update & Security:
+
+    -   Click on `Update & Security`.
+3.  Go to Activation:
+
+    -   In the left-hand menu, click on `Activation`.
+4.  Change the Product Key:
+
+    -   Click on `Change product key` and enter the new product key for the Professional Workstation edition.
+
+### Ensure You Have the Correct Edition
+
+Make sure the product key you are using corresponds to the edition you want to upgrade to. If the product key is incorrect or for a different edition, the upgrade will fail.
+
+### Checking Logs for More Details
+
+If you continue to face issues, reviewing the DISM log file for more detailed error information can be helpful:
+
+-   Navigate to `C:\WINDOWS\Logs\DISM\dism.log`.
+-   Open the log file with a text editor to see if there are more specific details about why the operation failed.
+
+These steps should help you successfully change your Windows edition to Professional Workstation.
