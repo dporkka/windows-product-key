@@ -1,7 +1,6 @@
-# windows-product-key
-To display your current Windows product key using the Command Prompt or PowerShell, follow these steps:
+# How to find your Windows Product Key using the Command Prompt or Powershell
 
-### Using Command Prompt
+## Using Command Prompt
 
 1.  Open Command Prompt as Administrator:
 
@@ -15,7 +14,7 @@ To display your current Windows product key using the Command Prompt or PowerShe
 
     This command retrieves the product key embedded in your system's BIOS/UEFI firmware.
 
-### Using PowerShell
+## Using PowerShell
 
 1.  Open PowerShell as Administrator:
 
@@ -29,14 +28,14 @@ To display your current Windows product key using the Command Prompt or PowerShe
 
     This command also retrieves the product key from your system's BIOS/UEFI firmware.
 
-### Notes:
+## Notes:
 
 -   OEM Keys: These commands typically retrieve the OEM product key embedded in the BIOS/UEFI. If you have a retail product key that you manually entered, it might not be retrieved by these commands.
 -   Security: Be cautious when handling your product key. Avoid sharing it publicly or storing it in an insecure location.
 
 If the product key isn't being displayed using the previous methods, it may be because the product key is not stored in the BIOS/UEFI firmware or that the command didn't work as expected. Here are alternative methods to retrieve your Windows product key:
 
-### Using PowerShell Script
+## Using PowerShell Script
 
 You can use a PowerShell script to retrieve the product key from the Windows Registry:
 
@@ -95,7 +94,7 @@ function Get-WindowsKey {
 Get-WindowsKey
 
 
-### Windows Edition Differences:
+## Windows Edition Differences:
 
 -   Cloud Edition: Lightweight, cloud-focused.
 -   Professional Education: Education-specific features for teachers and students.
